@@ -15,7 +15,7 @@
     "devserver": "webpack-dev-server --inline --colors --config ./build/webpack.dev.conf.js",
     "dev": "concurrently --kill-others \"npm run watch:docs\" \"npm run devserver\"",
     "test": "jest --coverage --verbose",
-    "ci": "cross-env JEST_JUNIT_OUTPUT=\"reports/junit/js-test-results.xml\" && jest --coverage --verbose --ci --testResultsProcessor=\"jest-junit\" && npm run build",
+    "ci": "jest --coverage --verbose --ci --testResultsProcessor=\"jest-junit\" && npm run build",
     "prepublish": "npm run ci"
   },
   "keywords": [
