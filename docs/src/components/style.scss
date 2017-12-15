@@ -1,3 +1,5 @@
+@import url('https://use.fontawesome.com/c49df8d133.css');
+
 footer {
   margin: 5em 0;
   color: rgb(126, 126, 126);
@@ -13,4 +15,8 @@ footer {
 
 .initial-content {
   padding-top: 3em;
+}
+
+.no-underline {
+  border-bottom: none;
 }

@@ -12,12 +12,12 @@
   }
 
 
-  &-items, &-items>*, &-title, &-title>* {
+  &-items, &-items>*, &-title, &-title>*, &-title>div>* {
     color: $color-light;
     white-space: nowrap;
   }
 
-  &-title {
+  &-title, &-title>div {
     font-size: 1.2em;
     font-weight: 600;
     white-space: nowrap;

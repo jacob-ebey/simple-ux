@@ -28,7 +28,11 @@ export default class App extends Component {
 
   render = () => (
     <div>
-      <Toolbar class='demo-toolbar' title={<a href='#'>Simple-UX</a>}>
+      <Toolbar
+        class='demo-toolbar'
+        title={<a href='#'>Simple-UX</a>}
+      >
+        <a class='no-underline' href='http://github.com/jacob-ebey/simple-ux'><i class='fa fa-github' /></a>
         <a href='#'>Home</a>
         <Dropdown label='Layout'>
           <a href='#content-example'>Content</a>
