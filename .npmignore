@@ -2,8 +2,3 @@
 .DS_Store
 **/npm-debug.log
 **/node_modules
-test
-src
-build
-docs
-coverage

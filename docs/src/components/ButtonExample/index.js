@@ -20,7 +20,7 @@ const ButtonExample = () => (
 
     <p>The current colors are: primary, secondary.</p>
 
-    <Code>{`<Button color='primary'>Raise</Button>`}</Code>
+    <Code>{`<Button color='primary'>Primary</Button>`}</Code>
 
     <div class='button-example-space'>
       <Button>Default</Button>

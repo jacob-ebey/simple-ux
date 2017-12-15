@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '../dist/'),
-    filename: 'simple-ux.js'
+    filename: 'simple-ux.js',
+    libraryTarget: 'commonjs2'
   },
   externals: {
     'preact': 'preact'
