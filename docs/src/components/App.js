@@ -32,7 +32,6 @@ export default class App extends Component {
         class='demo-toolbar'
         title={<a href='#'>Simple-UX</a>}
       >
-        <a class='no-underline' href='http://github.com/jacob-ebey/simple-ux'><i class='fa fa-github' /></a>
         <a href='#'>Home</a>
         <Dropdown label='Layout'>
           <a href='#content-example'>Content</a>
@@ -45,6 +44,7 @@ export default class App extends Component {
           <a href='#stepper-example'>Stepper</a>
           <a href='#toolbar-example'>Toolbar</a>
         </Dropdown>
+        <a class='no-underline' href='http://github.com/jacob-ebey/simple-ux'><i class='fa fa-github' /></a>
       </Toolbar>
 
       <Content class='initial-content'>
