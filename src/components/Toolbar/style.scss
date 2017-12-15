@@ -8,9 +8,7 @@
   &-body {
     @extend .content;
     @extend .spacer;
-    &:active {
-      overflow-x: auto;
-    }
+    overflow-x: auto;
   }
 
 

@@ -36,5 +36,7 @@ every device.
 <ul>
   <li><a href='https://jacob-ebey.github.io/simple-ux/#button-example'>Button</a></li>
   <li><a href='https://jacob-ebey.github.io/simple-ux/#code-example'>Code</a></li>
+  <li><a href='https://jacob-ebey.github.io/simple-ux/#dropdown-example'>Dropdown</a></li>
   <li><a href='https://jacob-ebey.github.io/simple-ux/#stepper-example'>Stepper</a></li>
+  <li><a href='https://jacob-ebey.github.io/simple-ux/#toolbar-example'>Toolbar</a></li>
 </ul>
