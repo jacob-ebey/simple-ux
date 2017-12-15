@@ -9,12 +9,20 @@ import './style.scss'
  */
 export default class Button extends Component {
   render (props) {
-    const { class: className, children, onClick, color, animation, ...rest } = props
+    const { animation, color, disabled, onClick, class: className, children, ...rest } = props
 
     return (
       <a
         {...rest}
-        class={merge('button', mod('button', color), mod('button', merge2(animation, color)), className)}
+        class={
+          merge(
+            'button',
+            mod('button', color),
+            mod('button', disabled && 'disabled'),
+            mod('button', merge2(animation, color)),
+            className
+          )
+        }
         onClick={onClick && this._handleClick}
       >
         {children}
@@ -23,9 +31,9 @@ export default class Button extends Component {
   }
 
   _handleClick = (ev) => {
-    const { onClick } = this.props
+    const { onClick, disabled } = this.props
 
-    raise(onClick, () => {
+    raise(onClick && !disabled, () => {
       ev.preventDefault()
 
       onClick(ev)

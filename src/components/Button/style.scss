@@ -10,6 +10,10 @@
   cursor: pointer;
   user-select: none;
 
+  &-disabled {
+    color: $color-gray;
+  }
+
   &:hover, &:focus {
     border: $border-width solid $color-dark;
     background-color: $color-light-darker;

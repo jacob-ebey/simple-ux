@@ -29,21 +29,22 @@ export default class Stepper extends Component {
   }
 
   render (props) {
-    const { nextLabel, previousLabel, class: className, children, ...rest } = props
+    const { title, nextLabel, previousLabel, class: className, children, ...rest } = props
 
     return (
       <div
         {...rest}
         class={merge('stepper', className)}
       >
+        { title && <div class='stepper-title'>{title}</div> }
         <div class='stepper-body'>
           {this._renderStep()}
         </div>
         <div class='stepper-footer'>
-          <Button data-test='decrement' disabled={this.canDecrement} onClick={this._decrementStep}>
+          <Button data-test='decrement' disabled={!this.canDecrement} onClick={this._decrementStep}>
             {previousLabel}
           </Button>
-          <Button data-test='increment' disabled={this.canIncrement} onClick={this._incrementStep}>
+          <Button data-test='increment' disabled={!this.canIncrement} onClick={this._incrementStep}>
             {nextLabel}
           </Button>
         </div>

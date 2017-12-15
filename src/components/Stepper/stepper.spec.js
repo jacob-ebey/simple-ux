@@ -39,6 +39,11 @@ describe('Stepper', () => {
       wrapper.setState({ step: 1 })
       expect(wrapper).toMatchSnapshot()
     })
+
+    it('can render title', () => {
+      const wrapper = shallow(<Stepper title='ROFL' />)
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 
   describe('- logic -', () => {

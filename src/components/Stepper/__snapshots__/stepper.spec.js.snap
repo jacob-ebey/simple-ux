@@ -8,14 +8,14 @@ preact-render-spy (1 nodes)
   <div class="stepper-footer">
     <Button
       data-test="decrement"
-      disabled={false}
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Previous
     </Button>
     <Button
       data-test="increment"
-      disabled={false}
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Next
@@ -33,14 +33,40 @@ preact-render-spy (1 nodes)
   <div class="stepper-footer">
     <Button
       data-test="decrement"
-      disabled={false}
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Previous
     </Button>
     <Button
       data-test="increment"
-      disabled={false}
+      disabled={true}
+      onClick={[Function anonymous]}
+    >
+      Next
+    </Button>
+  </div>
+</div>
+
+`;
+
+exports[`Stepper - snapshots - can render title 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="stepper">
+  <div class="stepper-title">ROFL</div>
+  <div class="stepper-body"></div>
+  <div class="stepper-footer">
+    <Button
+      data-test="decrement"
+      disabled={true}
+      onClick={[Function anonymous]}
+    >
+      Previous
+    </Button>
+    <Button
+      data-test="increment"
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Next
@@ -60,14 +86,14 @@ preact-render-spy (1 nodes)
   <div class="stepper-footer">
     <Button
       data-test="decrement"
-      disabled={false}
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Previous
     </Button>
     <Button
       data-test="increment"
-      disabled={true}
+      disabled={false}
       onClick={[Function anonymous]}
     >
       Next
@@ -87,14 +113,14 @@ preact-render-spy (1 nodes)
   <div class="stepper-footer">
     <Button
       data-test="decrement"
-      disabled={true}
+      disabled={false}
       onClick={[Function anonymous]}
     >
       Previous
     </Button>
     <Button
       data-test="increment"
-      disabled={false}
+      disabled={true}
       onClick={[Function anonymous]}
     >
       Next

@@ -7,6 +7,13 @@ preact-render-spy (1 nodes)
 
 `;
 
+exports[`Button - snapshots - can be disabled 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="button button-disabled"></a>
+
+`;
+
 exports[`Button - snapshots - can render 1`] = `
 preact-render-spy (1 nodes)
 -------

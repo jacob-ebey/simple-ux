@@ -4,7 +4,7 @@
   code {
     display: block;
     overflow-x: auto;
-    padding: 10px;
+    padding: $content-padding / 2;
     background-color: $color-gray;
   }
 }

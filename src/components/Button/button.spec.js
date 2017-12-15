@@ -25,6 +25,11 @@ describe('Button', () => {
       )
       expect(wrapper).toMatchSnapshot()
     })
+
+    it('can be disabled', () => {
+      const wrapper = shallow(<Button disabled />)
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 
   describe('- logic -', () => {

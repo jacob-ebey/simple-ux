@@ -1,7 +1,21 @@
+@import '../variables';
+
 .stepper {
+  border: $border-width solid $color-dark;
+  padding: $content-padding / 2;
+
+  &-title {
+    font-size: 1.5em;
+  }
+
   &-body {
+    border: $border-width solid $color-dark;
+    margin: $content-padding / 2 0;
   }
 
   &-footer {
+    .button {
+      margin-right: $content-padding / 2;
+    }
   }
 }

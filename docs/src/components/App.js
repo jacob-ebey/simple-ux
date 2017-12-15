@@ -8,6 +8,7 @@ import ButtonExample from './ButtonExample'
 import CodeExample from './CodeExample'
 import ContentExample from './ContentExample'
 import SpaceExample from './SpaceExample'
+import StepperExample from './StepperExample'
 
 import './style.scss'
 
@@ -41,11 +42,13 @@ const App = () => (
       <ul>
         <li><a href='#button-example'>Button</a></li>
         <li><a href='#code-example'>Code</a></li>
+        <li><a href='#stepper-example'>Stepper</a></li>
       </ul>
     </Content>
 
     <ButtonExample />
     <CodeExample />
+    <StepperExample />
   </div>
 )
 
