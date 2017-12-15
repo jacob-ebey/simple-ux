@@ -28,6 +28,7 @@ const App = () => (
 
       <ul>
         <li><a href='#content-example'>Content</a></li>
+        <li><a href='#space-example'>Space</a></li>
       </ul>
     </Content>
 
