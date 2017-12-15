@@ -13,7 +13,8 @@ const CodeExample = () => (
 
     <h3>Remarks</h3>
     <p>
-      A simple component to allow you to render formatted code.
+      A simple component to allow you to render formatted code. This is the component
+      used throughout this site to show examples.
     </p>
 
     <Code>
