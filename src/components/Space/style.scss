@@ -1,0 +1,8 @@
+.spacer {
+  display: flex;
+  justify-content: space-between;
+
+  &-even {
+    justify-content: space-around;
+  }
+}

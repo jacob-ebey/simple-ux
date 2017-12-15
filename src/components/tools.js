@@ -56,7 +56,8 @@ export const raise = (condition, action) => {
 
 /**
  * Converts the given children to an array. If children is not defined,
- * an empty array is returned.
+ * an empty array is returned. This is in place to future proof for a
+ * react specific version if need be.
  *
  * @param {any} children - The children
  */

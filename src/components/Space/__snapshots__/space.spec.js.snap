@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Space - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="spacer custom"></div>
+
+`;
+
+exports[`Space - snapshots - can add custom class and space even 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="spacer spacer-even custom"></div>
+
+`;
+
+exports[`Space - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="spacer"></div>
+
+`;
+
+exports[`Space - snapshots - can render children child 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="spacer">
+  <div>Child 1</div>
+  <div>Child 2</div>
+  <div>Child 3</div>
+</div>
+
+`;
+
+exports[`Space - snapshots - can space even 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="spacer spacer-even"></div>
+
+`;

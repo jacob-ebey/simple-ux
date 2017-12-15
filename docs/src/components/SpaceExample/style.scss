@@ -1,0 +1,13 @@
+@import '../../../../src/components/variables';
+
+.space-example {
+  background: $color-gray;
+  padding: 1em 0;
+}
+
+.space-block {
+  width: 20%;
+  height: 100px;
+  background: $color-lessdark;
+  border: 2px solid $color-secondary;
+}

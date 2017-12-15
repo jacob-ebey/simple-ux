@@ -8,15 +8,15 @@ import './style.scss'
 
 const ButtonExample = () => (
   <Content id='button-example'>
-    <h2>Button</h2>
+    <h3>Button</h3>
 
-    <h3>Remarks</h3>
+    <h4>Remarks</h4>
 
     <p>Buttons are rendered as {`<a />`} elements, allowing you to provide an href.</p>
 
     <p>If an onClick is provided, the event will have preventDefault called for you.</p>
 
-    <h3>Colors</h3>
+    <h4>Colors</h4>
 
     <p>The current colors are: primary, secondary.</p>
 
@@ -30,20 +30,20 @@ const ButtonExample = () => (
 
     <br />
 
-    <h3>Animations</h3>
+    <h4>Animations</h4>
 
     <p>The current animations are: raise, pulse.</p>
 
     <Code>{`<Button animation='raise'>Raise</Button>`}</Code>
 
-    <h4>Raise</h4>
+    <h5>Raise</h5>
     <div class='button-example-space'>
       <Button animation='raise'>Default</Button>
       <Button color='primary' animation='raise'>Primary</Button>
       <Button color='secondary' animation='raise'>Secondary</Button>
     </div>
 
-    <h4>Pulse</h4>
+    <h5>Pulse</h5>
     <div class='button-example-space'>
       <Button animation='pulse'>Default</Button>
       <Button color='primary' animation='pulse'>Primary</Button>

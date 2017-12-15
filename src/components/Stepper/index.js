@@ -32,7 +32,10 @@ export default class Stepper extends Component {
     const { nextLabel, previousLabel, class: className, children, ...rest } = props
 
     return (
-      <div class={merge('stepper', className)} {...rest}>
+      <div
+        {...rest}
+        class={merge('stepper', className)}
+      >
         <div class='stepper-body'>
           {this._renderStep()}
         </div>
