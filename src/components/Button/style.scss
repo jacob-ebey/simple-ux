@@ -1,0 +1,74 @@
+@import '../variables';
+
+.button {
+  display: inline-block;
+  border: $border-width solid $color-dark;
+  padding: 5px;
+  background-color: $color-light;
+  color: $color-dark;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover, &:focus {
+    background-color: $color-light-darker;
+  }
+
+  &:active {
+    border-color: $color-lessdark;
+    background-color: $color-light-darkest;
+  }
+
+  &-primary {
+    border: $border-width solid $color-primary;
+
+    &:hover, &:focus {
+      border-color: $color-primary-dark;
+    }
+  }
+
+  &-secondary {
+    border: $border-width solid $color-secondary;
+
+    &:hover, &:focus {
+      border-color: $color-secondary-dark;
+    }
+  }
+
+  &-raise, &-raise-primary, &-raise-secondary {
+    &:hover, &:focus {
+      box-shadow: 0 0.5em 0.5em -0.5em $color-dark;
+      transform: translateY(-0.25em);
+    }
+  }
+
+  &-pulse {
+    &:hover, &:focus {
+      animation: -pulse 0.5s;
+      box-shadow: 0 0 0 0.5em rgba($color-light, 0);
+    }
+    @keyframes -pulse {
+      0% { box-shadow: 0 0 0 0 $color-dark; }
+    }
+  }
+
+  &-pulse-primary {
+    &:hover, &:focus {
+      animation: -pulse-primary 0.5s;
+      box-shadow: 0 0 0 0.5em rgba($color-light, 0);
+    }
+    @keyframes -pulse-primary {
+      0% { box-shadow: 0 0 0 0 $color-primary; }
+    }
+  }
+
+  &-pulse-secondary {
+    &:hover, &:focus {
+      animation: -pulse-secondary 0.5s;
+      box-shadow: 0 0 0 0.5em rgba($color-light, 0);
+    }
+    @keyframes -pulse-secondary {
+      0% { box-shadow: 0 0 0 0 $color-secondary; }
+    }
+  }
+}

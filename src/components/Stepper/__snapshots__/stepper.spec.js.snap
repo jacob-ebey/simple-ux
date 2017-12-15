@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="stepper custom">
+  <div class="stepper-body"></div>
+  <div class="stepper-footer">
+    <Button
+      data-test="decrement"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Previous
+    </Button>
+    <Button
+      data-test="increment"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Next
+    </Button>
+  </div>
+</div>
+
+`;
+
+exports[`Stepper - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="stepper">
+  <div class="stepper-body"></div>
+  <div class="stepper-footer">
+    <Button
+      data-test="decrement"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Previous
+    </Button>
+    <Button
+      data-test="increment"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Next
+    </Button>
+  </div>
+</div>
+
+`;
+
+exports[`Stepper - snapshots - only renders first child 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="stepper">
+  <div class="stepper-body">
+    <span>Child 1</span>
+  </div>
+  <div class="stepper-footer">
+    <Button
+      data-test="decrement"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Previous
+    </Button>
+    <Button
+      data-test="increment"
+      disabled={true}
+      onClick={[Function anonymous]}
+    >
+      Next
+    </Button>
+  </div>
+</div>
+
+`;
+
+exports[`Stepper - snapshots - only renders second child 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="stepper">
+  <div class="stepper-body">
+    <span>Child 2</span>
+  </div>
+  <div class="stepper-footer">
+    <Button
+      data-test="decrement"
+      disabled={true}
+      onClick={[Function anonymous]}
+    >
+      Previous
+    </Button>
+    <Button
+      data-test="increment"
+      disabled={false}
+      onClick={[Function anonymous]}
+    >
+      Next
+    </Button>
+  </div>
+</div>
+
+`;

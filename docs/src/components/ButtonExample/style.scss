@@ -1,0 +1,9 @@
+@import 'src/components/variables';
+
+.button-example-space {
+  margin: $content-padding 0;
+
+  &>.button {
+    margin-right: $content-padding;
+  }
+}

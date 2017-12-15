@@ -1,0 +1,72 @@
+{
+  "name": "simple-ux",
+  "version": "0.0.1",
+  "description": "Components for preact that introduces a simple to use, yet powerful design framework to keep things simple.",
+  "main": "dist/simple-ux.js",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:docs",
+    "build:lib": "cross-env NODE_ENV=production webpack -p --config ./build/webpack.prod.conf.js",
+    "build:docs": "cross-env NODE_ENV=production webpack -p --config ./build/webpack.docs.conf.js",
+    "watch:docs": "webpack --watch -p --config ./build/webpack.docs.conf.js",
+    "devserver": "webpack-dev-server --inline --colors --config ./build/webpack.dev.conf.js",
+    "dev": "concurrently --kill-others \"npm run watch:docs\" \"npm run devserver\"",
+    "test": "jest --coverage --verbose",
+    "ci": "jest --coverage --verbose --ci && npm run build"
+  },
+  "keywords": [
+    "Simple",
+    "UX",
+    "Components",
+    "Preact"
+  ],
+  "author": "Jacob Ebey",
+  "license": "ISC",
+  "jest": {
+    "snapshotSerializers": [
+      "preact-render-spy/snapshot"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest"
+    }
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "preact": "^8.2.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "autoprefixer-loader": "^3.2.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-array-from": "^1.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.0.0",
+    "concurrently": "^3.5.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "glob": "^7.1.2",
+    "jest": "^21.2.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "preact-render-spy": "^1.2.1",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

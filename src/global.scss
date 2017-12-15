@@ -1,0 +1,30 @@
+@import 'components/variables';
+@import 'normalize';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  background-color: $color-light;
+}
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+  border-bottom: 1px dotted $color-accent;
+  outline: 0;
+
+  &:hover {
+    border-bottom: 1px solid $color-accent;
+  }
+}
+
+ul {
+  padding-left: 1em;
+  margin: 0;
+}
+
+li {
+  padding: 0.25em 0;
+}

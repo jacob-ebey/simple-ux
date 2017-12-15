@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<pre class="code-block custom">
+  <code></code>
+</pre>
+
+`;
+
+exports[`Code - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<pre class="code-block">
+  <code></code>
+</pre>
+
+`;
+
+exports[`Code - snapshots - can render children child 1`] = `
+preact-render-spy (1 nodes)
+-------
+<pre class="code-block">
+  <code>
+    <span>Child 1</span>
+    <span>Child 2</span>
+  </code>
+</pre>
+
+`;
+
+exports[`Code - snapshots - can render string child 1`] = `
+preact-render-spy (1 nodes)
+-------
+<pre class="code-block">
+  <code>console.log('Hello, Test!')</code>
+</pre>
+
+`;

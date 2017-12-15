@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="button custom"></a>
+
+`;
+
+exports[`Button - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="button"></a>
+
+`;
+
+exports[`Button - snapshots - can render children 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="button">
+  <span>Child 1</span>
+  <span>Child 2</span>
+</a>
+
+`;
