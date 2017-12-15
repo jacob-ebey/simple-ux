@@ -34,8 +34,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run:
-        name: CI Build
-        command: yarn ci
-        environment:
-          JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+      - run: yarn ci 
+
