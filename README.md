@@ -1,4 +1,3 @@
-<h2>Simple-UX</h2>
 Simple yet elegant components for Preact.
 <hr />
 
