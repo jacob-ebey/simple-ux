@@ -3,9 +3,11 @@ import { h } from 'preact' // eslint-disable-line no-unused-vars
 import Code from 'src/components/Code'
 import Content from 'src/components/Content'
 
-const exampleCode = `if (sayHello) {
+const exampleCode = `
+if (sayHello) {
   console.log('Hello, World!')
-}`
+}
+`
 
 const CodeExample = () => (
   <Content id='code-example'>
@@ -18,13 +20,13 @@ const CodeExample = () => (
     </p>
 
     <Code>
-      {
-        `<Code>
-  {
-    \`${exampleCode}\`
-  }
-</Code>`
-      }
+      {`
+<Code>
+  {\`
+${exampleCode.trim()}
+  \`}
+</Code>
+      `}
     </Code>
 
     <p>Outputs:</p>
