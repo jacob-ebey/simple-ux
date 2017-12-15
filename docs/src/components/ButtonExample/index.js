@@ -18,7 +18,7 @@ const ButtonExample = () => (
 
     <h3>Colors</h3>
 
-    <p>The current animations are: primary, secondary.</p>
+    <p>The current colors are: primary, secondary.</p>
 
     <Code>{`<Button color='primary'>Raise</Button>`}</Code>
 
