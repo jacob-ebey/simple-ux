@@ -5,7 +5,7 @@ const smoothscroll = () => {
 
   $('a[href^="#"]').click(function () {
     const href = $.attr(this, 'href')
-    const found = $(href)
+    const found = href === '#' ? $('body') : $(href)
     if (typeof found.offset === 'function') {
       $root.animate({
         scrollTop: found.offset().top
