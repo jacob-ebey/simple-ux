@@ -2,6 +2,7 @@ import { h } from 'preact' // eslint-disable-line no-unused-vars
 
 import 'src'
 
+import Code from 'src/components/Code'
 import Content from 'src/components/Content'
 
 import ButtonExample from './ButtonExample'
@@ -18,6 +19,16 @@ const App = () => (
       <h1>Simple-UX</h1>
       <p>Simple yet elegant components for Preact.</p>
       <hr />
+
+      <h2>Getting Started</h2>
+
+      <p>Install the simple-ux packae:</p>
+      <Code>{`npm install -s simple-ux`}</Code>
+
+      <p>Import a component</p>
+      <Code>{`import { Button } from 'simple-ux'`}</Code>
+
+      <p>You are up and running!</p>
 
       <h2>Layout Components</h2>
 
