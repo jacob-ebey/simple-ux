@@ -3,23 +3,23 @@
 exports[`Content - snapshots - can add custom class 1`] = `
 preact-render-spy (1 nodes)
 -------
-<div class="content custom"></div>
+<article class="content custom"></article>
 
 `;
 
 exports[`Content - snapshots - can render 1`] = `
 preact-render-spy (1 nodes)
 -------
-<div class="content"></div>
+<article class="content"></article>
 
 `;
 
 exports[`Content - snapshots - can render children 1`] = `
 preact-render-spy (1 nodes)
 -------
-<div class="content">
+<article class="content">
   <p>Child 1</p>
   <p>Child 2</p>
-</div>
+</article>
 
 `;

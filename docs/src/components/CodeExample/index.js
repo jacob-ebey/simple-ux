@@ -11,9 +11,8 @@ if (sayHello) {
 
 const CodeExample = () => (
   <Content id='code-example'>
-    <h2>Code</h2>
+    <h3>Code</h3>
 
-    <h3>Remarks</h3>
     <p>
       A simple component to allow you to render formatted code. This is the component
       used throughout this site to show examples.

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<nav class="toolbar custom">
+  <div class="toolbar-body"></div>
+</nav>
+
+`;
+
+exports[`Toolbar - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<nav class="toolbar">
+  <div class="toolbar-body"></div>
+</nav>
+
+`;
+
+exports[`Toolbar - snapshots - can render children 1`] = `
+preact-render-spy (1 nodes)
+-------
+<nav class="toolbar">
+  <div class="toolbar-body">
+    <div class="toolbar-items">
+      <p>Child 1</p>
+      <p>Child 2</p>
+    </div>
+  </div>
+</nav>
+
+`;
+
+exports[`Toolbar - snapshots - can render title 1`] = `
+preact-render-spy (1 nodes)
+-------
+<nav class="toolbar">
+  <div class="toolbar-body">
+    <div class="toolbar-title">
+      <a>Title</a>
+    </div>
+  </div>
+</nav>
+
+`;

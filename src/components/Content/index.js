@@ -5,12 +5,12 @@ import { merge } from '../tools'
 import './style.scss'
 
 const Content = ({ class: className, children, ...rest }) => (
-  <div
+  <article
     {...rest}
     class={merge('content', className)}
   >
     {children}
-  </div>
+  </article>
 )
 
 export default Content

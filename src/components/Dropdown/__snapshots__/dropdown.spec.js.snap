@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="dropdown custom">
+  <div class="dropdown-label"></div>
+  <div class="dropdown-content"></div>
+</a>
+
+`;
+
+exports[`Dropdown - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="dropdown">
+  <div class="dropdown-label"></div>
+  <div class="dropdown-content"></div>
+</a>
+
+`;
+
+exports[`Dropdown - snapshots - can render children 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="dropdown">
+  <div class="dropdown-label"></div>
+  <div class="dropdown-content">
+    <p>Child 1</p>
+    <p>Child 2</p>
+  </div>
+</a>
+
+`;
+
+exports[`Dropdown - snapshots - can render label 1`] = `
+preact-render-spy (1 nodes)
+-------
+<a class="dropdown">
+  <div class="dropdown-label">
+    <a>Label</a>
+  </div>
+  <div class="dropdown-content"></div>
+</a>
+
+`;

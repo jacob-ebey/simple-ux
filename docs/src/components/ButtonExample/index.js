@@ -10,8 +10,6 @@ const ButtonExample = () => (
   <Content id='button-example'>
     <h3>Button</h3>
 
-    <h4>Remarks</h4>
-
     <p>Buttons are rendered as {`<a />`} elements, allowing you to provide an href.</p>
 
     <p>If an onClick is provided, the event will have preventDefault called for you.</p>

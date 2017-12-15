@@ -1,0 +1,37 @@
+@import '../variables';
+@import '../../global';
+
+.dropdown {
+  display: inline-block;
+  cursor: pointer;
+
+  &-label {
+    display: inline;
+    &, &>* {
+      cursor: pointer;
+    }
+  }
+
+  &-content>* {
+    color: $color-light;
+  }
+  
+  &-content {
+    display: none;
+    z-index: 99;
+    flex-direction: column;
+    position: absolute;
+    background-color: $color-lessdark;
+    padding: $content-padding / 2;
+
+    &>* {
+      margin: $content-padding / 2 0;
+    }
+  }
+
+  &:hover, &:active, &-content:hover, &-content:active {
+    .dropdown-content {
+      display: flex;
+    }
+  }
+}

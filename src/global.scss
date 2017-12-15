@@ -1,11 +1,11 @@
 @import 'components/variables';
 @import 'normalize';
 
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 
 body {
   font-family: 'Nunito', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   background-color: $color-light;
 }
 
@@ -31,6 +31,6 @@ li {
 
 .subtitle {
   vertical-align: middle;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
 }

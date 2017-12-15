@@ -1,0 +1,39 @@
+@import '../variables';
+@import '../Content/style';
+@import '../Space/style';
+
+.toolbar {
+  background-color: $color-primary;
+
+  &-body {
+    @extend .content;
+    @extend .spacer;
+    &:active {
+      overflow-x: auto;
+    }
+  }
+
+
+  &-items, &-items>*, &-title, &-title>* {
+    color: $color-light;
+    white-space: nowrap;
+  }
+
+  &-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    white-space: nowrap;
+
+    &>a, &>a:hover {
+      border-bottom: none;
+    }
+  }
+
+  &-items {
+    margin-left: 1em;
+  }
+
+  &-items>* {
+    margin: 0 0.5em;
+  }
+}
