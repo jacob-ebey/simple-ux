@@ -6,7 +6,7 @@ For more information, see: https://jacob-ebey.github.io/simple-ux/
 
 ## Getting Started
 
-Install the simple-ux packae:
+Install the simple-ux package:
 
 ```
 npm install -s simple-ux
@@ -20,7 +20,7 @@ import { Button } from 'simple-ux'
 
 You are up and running!
 
-## Layout Components
+## Layout
 
 We think less is more. That means we provide you with a few components to
 keep you on the right track in maintaining a good experience for users on
@@ -32,6 +32,8 @@ every device.
 </ul>
 
 ## Components
+
+This is the ever-growing component list.
 
 <ul>
   <li><a href='https://jacob-ebey.github.io/simple-ux/#button-example'>Button</a></li>

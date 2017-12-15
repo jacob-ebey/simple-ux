@@ -64,7 +64,7 @@ export default class App extends Component {
 
         <hr />
 
-        <h2>Layout Components</h2>
+        <h2>Layout</h2>
 
         <p>
           We think less is more. That means we provide you with a few components to
