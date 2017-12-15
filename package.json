@@ -1,8 +1,12 @@
 {
   "name": "simple-ux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Components for preact that introduces a simple to use, yet powerful design framework to keep things simple.",
   "main": "dist/simple-ux.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacob-ebey/simple-ux.git"
+  },
   "scripts": {
     "build": "npm run build:lib && npm run build:docs",
     "build:lib": "cross-env NODE_ENV=production webpack -p --config ./build/webpack.prod.conf.js",
@@ -11,7 +15,8 @@
     "devserver": "webpack-dev-server --inline --colors --config ./build/webpack.dev.conf.js",
     "dev": "concurrently --kill-others \"npm run watch:docs\" \"npm run devserver\"",
     "test": "jest --coverage --verbose",
-    "ci": "jest --coverage --verbose --ci && npm run build"
+    "ci": "jest --coverage --verbose --ci && npm run build",
+    "prepublish": "npm run ci"
   },
   "keywords": [
     "Simple",
