@@ -1,4 +1,4 @@
-Simple yet elegant components for Preact.
+Simple yet elegant components for Preact. [![CircleCI](https://circleci.com/gh/jacob-ebey/simple-ux.svg?style=svg)](https://circleci.com/gh/jacob-ebey/simple-ux)
 <hr />
 
 ## Getting Started
