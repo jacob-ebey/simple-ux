@@ -17,31 +17,31 @@ const SpaceExample = () => (
     <Code>
       {`
 <Space class='space-example'>
-  <div class='space-block' />
-  <div class='space-block' />
-  <div class='space-block' />
+  <div class='example-block' />
+  <div class='example-block' />
+  <div class='example-block' />
 </Space>
 
 <Space class='space-example' even>
-  <div class='space-block' />
-  <div class='space-block' />
-  <div class='space-block' />
+  <div class='example-block' />
+  <div class='example-block' />
+  <div class='example-block' />
 </Space>
       `}
     </Code>
 
     <h4>Default</h4>
     <Space class='space-example'>
-      <div class='space-block' />
-      <div class='space-block' />
-      <div class='space-block' />
+      <div class='example-block' />
+      <div class='example-block' />
+      <div class='example-block' />
     </Space>
 
     <h4>Even</h4>
     <Space class='space-example' even>
-      <div class='space-block' />
-      <div class='space-block' />
-      <div class='space-block' />
+      <div class='example-block' />
+      <div class='example-block' />
+      <div class='example-block' />
     </Space>
 
   </Content>

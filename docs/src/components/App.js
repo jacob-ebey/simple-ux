@@ -38,11 +38,6 @@ const App = () => (
     <Content>
       <h2>Components</h2>
 
-      <p>
-        Preact Components have been provided to make consuming the library
-        as simple as the styles themselves.
-      </p>
-
       <ul>
         <li><a href='#button-example'>Button</a></li>
         <li><a href='#code-example'>Code</a></li>
