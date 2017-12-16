@@ -18,17 +18,17 @@ const StepperExample = () => (
     <Code>
       {`
 <Stepper title='Title'>
-  <div>Step 1</div>
-  <div>Step 2</div>
-  <div>Step 3</div>
+  <Content>Step 1</Content>
+  <Content>Step 2</Content>
+  <Content>Step 3</Content>
 </Stepper>
       `}
     </Code>
 
     <Stepper title='Title'>
-      <div>Step 1</div>
-      <div>Step 2</div>
-      <div>Step 3</div>
+      <Content>Step 1</Content>
+      <Content>Step 2</Content>
+      <Content>Step 3</Content>
     </Stepper>
 
   </Content>

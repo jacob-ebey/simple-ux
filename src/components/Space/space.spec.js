@@ -21,6 +21,11 @@ describe('Space', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
+    it('can add breakpoint', () => {
+      const wrapper = shallow(<Space breakpoint='phablet' />)
+      expect(wrapper).toMatchSnapshot()
+    })
+
     it('can add custom class and space even', () => {
       const wrapper = shallow(<Space class='custom' even />)
       expect(wrapper).toMatchSnapshot()

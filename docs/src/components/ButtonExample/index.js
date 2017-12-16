@@ -10,9 +10,20 @@ const ButtonExample = () => (
   <Content id='button-example'>
     <h3>Button</h3>
 
-    <p>Buttons are rendered as {`<a />`} elements, allowing you to provide an href.</p>
+    <p>Buttons are rendered as {`<a />`} elements by default, allowing you to provide an href.</p>
 
     <p>If an onClick is provided, the event will have preventDefault called for you.</p>
+
+    <h4>Type</h4>
+
+    <p>
+      If submit is provided as the type, then a {`<button />`} element will be rendered. This
+      is how you would create a form submit button.
+    </p>
+
+    <Code>{`<Button type='submit'>Submit</Button>`}</Code>
+
+    <Button type='submit'>Submit</Button>
 
     <h4>Colors</h4>
 

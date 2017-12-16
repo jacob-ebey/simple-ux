@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textbox - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox custom">
+  <input id="textbox_1" />
+</div>
+
+`;
+
+exports[`Textbox - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox">
+  <input id="textbox_0" />
+</div>
+
+`;
+
+exports[`Textbox - snapshots - can render inline 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox textbox-inline">
+  <input id="textbox_3" />
+</div>
+
+`;
+
+exports[`Textbox - snapshots - can render label 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox">
+  <label for="textbox_2">Test Label</label>
+  <input id="textbox_2" />
+</div>
+
+`;
+
+exports[`Textbox - snapshots - can render multiline 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox">
+  <textarea id="textbox_4"></textarea>
+</div>
+
+`;
+
+exports[`Textbox - snapshots - uses provided id 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="textbox">
+  <input id="testid" />
+</div>
+
+`;

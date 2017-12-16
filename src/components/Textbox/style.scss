@@ -1,0 +1,35 @@
+@import '../variables';
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  padding: $content-padding / 2 0;
+
+  &-inline {
+    flex-direction: row;
+    align-items: center;
+
+    &>label {
+      margin-right: $content-padding / 2;
+    }
+  }
+
+  &>input, &>textarea {
+    min-width: 100px;
+    border: $border-width solid $color-dark;
+    transition: all 0.30s ease-in-out;
+
+    &:focus {
+      border: $border-width solid $color-lessdark;
+      box-shadow: 0 0 5px $color-primary;
+    }
+  }
+
+  &>input {
+    height: $input-height;
+  }
+
+  &>textarea {
+    resize: vertical;
+  }
+}

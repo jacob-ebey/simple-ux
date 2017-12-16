@@ -4,10 +4,17 @@ import { merge, mod } from '../tools'
 
 import './style.scss'
 
-const Space = ({ even, class: className, children, ...rest }) => (
+const Space = ({ breakpoint, even, class: className, children, ...rest }) => (
   <div
     {...rest}
-    class={merge('spacer', mod('spacer', even && 'even'), className)}
+    class={
+      merge(
+        'spacer',
+        mod('spacer', even && 'even'),
+        mod('spacer-break', breakpoint && breakpoint),
+        className
+      )
+    }
   >
     {children}
   </div>

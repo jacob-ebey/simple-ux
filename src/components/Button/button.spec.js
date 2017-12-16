@@ -30,6 +30,11 @@ describe('Button', () => {
       const wrapper = shallow(<Button disabled />)
       expect(wrapper).toMatchSnapshot()
     })
+
+    it('can render submit button', () => {
+      const wrapper = shallow(<Button type='submit' />)
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 
   describe('- logic -', () => {

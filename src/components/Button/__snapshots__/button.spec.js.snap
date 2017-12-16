@@ -30,3 +30,14 @@ preact-render-spy (1 nodes)
 </a>
 
 `;
+
+exports[`Button - snapshots - can render submit button 1`] = `
+preact-render-spy (1 nodes)
+-------
+<button
+  type="submit"
+  class="button"
+>
+</button>
+
+`;

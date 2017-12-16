@@ -1,8 +1,46 @@
+@import '../variables';
+
+
 .spacer {
   display: flex;
   justify-content: space-between;
 
   &-even {
     justify-content: space-around;
+  }
+
+  &-break-desktop {
+    flex-direction: column;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &-break-laptop {
+    flex-direction: column;
+    @include breakpoint(laptop) {
+      flex-direction: row;
+    }
+  }
+
+  &-break-tablet {
+    flex-direction: column;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &-break-phablet {
+    flex-direction: column;
+    @include breakpoint(phablet) {
+      flex-direction: row;
+    }
+  }
+
+  &-break-mobileonly {
+    flex-direction: column;
+    @include breakpoint(mobileonly) {
+      flex-direction: row;
+    }
   }
 }

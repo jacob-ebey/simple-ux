@@ -9,11 +9,14 @@ import './style.scss'
  */
 export default class Button extends Component {
   render (props) {
-    const { animation, color, disabled, onClick, class: className, children, ...rest } = props
+    const { type, animation, color, disabled, onClick, class: className, children, ...rest } = props
+
+    const Comp = type === 'submit' ? 'button' : 'a'
 
     return (
-      <a
+      <Comp
         {...rest}
+        {...(Comp === 'button' ? {type} : {})}
         class={
           merge(
             'button',
@@ -26,7 +29,7 @@ export default class Button extends Component {
         onClick={onClick && this._handleClick}
       >
         {children}
-      </a>
+      </Comp>
     )
   }
 
