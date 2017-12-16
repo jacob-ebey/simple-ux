@@ -14,16 +14,16 @@ const TextboxExample = () => (
 
     <h4>Label</h4>
 
-    <p>If a label property is provided, a <label /> element will be rendered before the input.</p>
+    <p>If a label property is provided, a {`<label />`} element will be rendered before the input.</p>
 
-    <Code>{`<Textbox label='Hello, Label!' />`}</Code>
-    <Textbox label='Hello, Label!' />
+    <Code>{`<Textbox label='Label' />`}</Code>
+    <Textbox label='Label' />
 
     <h4>Inline</h4>
 
     <p>If an inline property is provided, the label will be rendered to the left of the input.</p>
 
-    <Code>{`<Textbox inline label='Hello, Label!' />`}</Code>
+    <Code>{`<Textbox inline label='Inline Label' />`}</Code>
 
     <Textbox inline label='Inline Label' />
 

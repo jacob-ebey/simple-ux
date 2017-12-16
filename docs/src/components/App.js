@@ -6,6 +6,7 @@ import Button from 'src/components/Button'
 import Code from 'src/components/Code'
 import Content from 'src/components/Content'
 import Dropdown from 'src/components/Dropdown'
+import Select from 'src/components/Select'
 import Space from 'src/components/Space'
 import Textbox from 'src/components/Textbox'
 import Toolbar from 'src/components/Toolbar'
@@ -18,6 +19,7 @@ import ButtonExample from './ButtonExample'
 import CodeExample from './CodeExample'
 import ContentExample from './ContentExample'
 import DropdownExample from './DropdownExample'
+import SelectExample from './SelectExample'
 import SpaceExample from './SpaceExample'
 import StepperExample from './StepperExample'
 import TextboxExample from './TextboxExample'
@@ -49,6 +51,7 @@ export default class App extends Component {
           <a href='#toolbar-example'>Toolbar</a>
         </Dropdown>
         <Dropdown label='Forms' href='#forms-example'>
+          <a href='#select-example'>Select</a>
           <a href='#textbox-example'>Textbox</a>
         </Dropdown>
         <a class='no-underline' href='http://github.com/jacob-ebey/simple-ux'><i class='fa fa-github' /></a>
@@ -118,6 +121,15 @@ export default class App extends Component {
   </div>
 </Space>
 
+<Select
+  label='Reason for Contact'
+  items={[
+    'Saying hello',
+    'Want a job',
+    'Something else'
+  ]}
+/>
+
 <Textbox multiline rows={4} label='Message' placeholder='Message' />
 
 <Button type='submit'>Submit</Button>
@@ -137,11 +149,21 @@ export default class App extends Component {
           </div>
         </Space>
 
+        <Select
+          label='Reason for Contact'
+          items={[
+            'Saying hello',
+            'Want a job',
+            'Something else'
+          ]}
+        />
+
         <Textbox multiline rows={4} label='Message' placeholder='Message' />
 
         <Button type='submit'>Submit</Button>
       </Content>
 
+      <SelectExample />
       <TextboxExample />
 
       <Footer />

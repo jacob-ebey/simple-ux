@@ -14,6 +14,7 @@ const Textbox = ({ multiline, label, inline, id, class: className, ...rest }) =>
   return (
     <div class={merge('textbox', mod('textbox', inline && 'inline'), className)}>
       { label && <label for={inputId}>{label}</label> }
+
       <Input
         {...rest}
         id={inputId}

@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select - snapshots - can add custom class 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select custom">
+  <select id="select_1"></select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can handle object without label 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_8">
+    <option value={1}>1</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can handle undefined item 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_7">
+    <option value={0}>0</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_0"></select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render children 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_2">
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render inline 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select select-inline">
+  <select id="select_4"></select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render items 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_6">
+    <option value={1}>Item 1</option>
+    <option value={2}>Item 2</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render items and children 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="testid">
+    <option>Default</option>
+    <option value={1}>Item 1</option>
+    <option value={2}>Item 2</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render label 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <label for="select_3">Test Label</label>
+  <select id="select_3"></select>
+</div>
+
+`;
+
+exports[`Select - snapshots - can render string items 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="select_5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+</div>
+
+`;
+
+exports[`Select - snapshots - uses provided id 1`] = `
+preact-render-spy (1 nodes)
+-------
+<div class="select">
+  <select id="testid"></select>
+</div>
+
+`;

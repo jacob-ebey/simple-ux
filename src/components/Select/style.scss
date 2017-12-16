@@ -1,0 +1,35 @@
+@import '../variables';
+@import 'mixin';
+
+.select {
+  display: flex;
+  flex-direction: column;
+  padding: $content-padding / 2 0;
+
+  &-inline {
+    flex-direction: row;
+    align-items: center;
+
+    &>label {
+      margin-right: $content-padding / 2;
+    }
+  }
+
+  &>select {
+    height: $input-height + 6;
+    min-width: 110px;
+
+    @include select-box(
+      $color-light,
+      0,
+      null,
+      10px,
+      $color-secondary,
+      $color-dark,
+      $color-light-darker,
+      $color-dark,
+      $color-dark,
+      $border-width
+    );
+  }
+}
