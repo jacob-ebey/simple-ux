@@ -1,8 +1,6 @@
 import { h } from 'preact' // eslint-disable-line no-unused-vars
 
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
-import Select from 'src/components/Select'
+import { Code, Content, Select } from 'src'
 
 const createItems = () => [
   { key: 1, label: 'Item 1' },

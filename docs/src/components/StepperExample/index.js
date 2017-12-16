@@ -1,8 +1,6 @@
 import { h } from 'preact' // eslint-disable-line no-unused-vars
 
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
-import Stepper from 'src/components/Stepper'
+import { Code, Content, Stepper } from 'src'
 
 import './style.scss'
 

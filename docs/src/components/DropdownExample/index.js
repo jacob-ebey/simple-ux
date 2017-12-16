@@ -1,8 +1,6 @@
 import { h } from 'preact' // eslint-disable-line no-unused-vars
 
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
-import Dropdown from 'src/components/Dropdown'
+import { Code, Content, Dropdown } from 'src'
 
 const DropdownExample = () => (
   <Content id='dropdown-example'>

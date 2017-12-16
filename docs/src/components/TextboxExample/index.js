@@ -1,8 +1,6 @@
 import { h } from 'preact' // eslint-disable-line no-unused-vars
 
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
-import Textbox from 'src/components/Textbox'
+import { Code, Content, Textbox } from 'src'
 
 const TextboxExample = () => (
   <Content id='textbox-example'>

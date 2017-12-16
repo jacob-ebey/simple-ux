@@ -1,17 +1,17 @@
 import { h, Component } from 'preact' // eslint-disable-line no-unused-vars
 
-import 'src'
+import {
+  Button,
+  Code,
+  Content,
+  Dropdown,
+  Select,
+  Space,
+  Textbox,
+  Toolbar
+} from 'src'
 
-import Button from 'src/components/Button'
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
-import Dropdown from 'src/components/Dropdown'
-import Select from 'src/components/Select'
-import Space from 'src/components/Space'
-import Textbox from 'src/components/Textbox'
-import Toolbar from 'src/components/Toolbar'
-
-import smoothscoll from '../smoothscoll'
+import smoothscroll from '../smoothscroll'
 
 import Footer from './Footer'
 
@@ -29,7 +29,7 @@ import './style.scss'
 
 export default class App extends Component {
   componentDidMount () {
-    smoothscoll()
+    smoothscroll()
   }
 
   render = () => (

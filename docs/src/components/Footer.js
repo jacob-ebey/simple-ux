@@ -1,6 +1,6 @@
 import { h, Component } from 'preact' // eslint-disable-line no-unused-vars
 
-import Content from 'src/components/Content'
+import { Content } from 'src'
 
 const Footer = () => (
   <footer>

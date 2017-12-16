@@ -1,8 +1,6 @@
 import { h } from 'preact' // eslint-disable-line no-unused-vars
 
-import Button from 'src/components/Button'
-import Code from 'src/components/Code'
-import Content from 'src/components/Content'
+import { Button, Code, Content } from 'src'
 
 import './style.scss'
 
