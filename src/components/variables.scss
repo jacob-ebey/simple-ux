@@ -37,3 +37,11 @@ $input-height: 30px;
     @media (max-width: 37.5em)  { @content ; }
   }
 }
+
+@mixin glow {
+  transition: box-shadow 0.30s ease-in-out;
+
+  &:focus {
+    box-shadow: 0 0 5px $color-primary;
+  }
+}

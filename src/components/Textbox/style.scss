@@ -17,11 +17,11 @@
   &>input, &>textarea {
     min-width: 100px;
     border: $border-width solid $color-dark;
-    transition: all 0.30s ease-in-out;
+
+    @include glow;
 
     &:focus {
       border: $border-width solid $color-lessdark;
-      box-shadow: 0 0 5px $color-primary;
     }
   }
 

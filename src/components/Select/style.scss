@@ -1,5 +1,4 @@
 @import '../variables';
-@import 'mixin';
 
 .select {
   display: flex;
@@ -18,18 +17,19 @@
   &>select {
     height: $input-height + 6;
     min-width: 110px;
+    background-color: $color-light;
+    border: $border-width solid $color-dark;
 
-    @include select-box(
-      $color-light,
-      0,
-      null,
-      10px,
-      $color-secondary,
-      $color-dark,
-      $color-light-darker,
-      $color-dark,
-      $color-dark,
-      $border-width
-    );
+    @include glow;
+
+    &:focus {
+      border: $border-width solid $color-lessdark;
+      background-color: $color-light-darker;
+    }
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
   }
 }
