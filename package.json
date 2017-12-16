@@ -1,6 +1,6 @@
 {
   "name": "simple-ux",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Components for preact that introduces a simple to use, yet powerful design framework to keep things simple.",
   "main": "dist/simple-ux.js",
   "repository": {
