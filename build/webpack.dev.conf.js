@@ -65,7 +65,8 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Power-by': 'Fei-WEBPACK'
-    }
+    },
+    host: '192.168.0.16'
   },
   resolve: {
     extensions: ['.js', '.scss'],

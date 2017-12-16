@@ -21,17 +21,25 @@
     font-size: 1.2em;
     font-weight: 600;
     white-space: nowrap;
+    margin-right: 1em;
+    order: 1;
 
     &>a, &>a:hover {
       border-bottom: none;
     }
+
+    @include breakpoint(phablet) {
+      display: inline;
+      order: 0;
+    }
   }
 
   &-items {
-    margin-left: 1em;
-  }
-
-  &-items>* {
-    margin: 0 0.5em;
+    &>* {
+      margin: 0 0.5em;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 }

@@ -75,8 +75,8 @@ export default class App extends Component {
         <h2>Layout</h2>
 
         <p>
-          We think less is more. That means we provide you with a few components to
-          keep you on the right track in maintaining a good experience for users on
+          We think less is more. That means we provide you with minimal components to
+          keep you on the right track in maintaining a responsive experience for users on
           every device.
         </p>
       </Content>
