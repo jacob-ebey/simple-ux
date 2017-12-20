@@ -14,6 +14,7 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted $color-accent;
   outline: 0;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 1px solid $color-accent;

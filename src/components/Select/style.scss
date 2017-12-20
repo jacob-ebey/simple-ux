@@ -19,6 +19,7 @@
     min-width: 110px;
     background-color: $color-light;
     border: $border-width solid $color-dark;
+    padding-left: $content-padding / 2;
 
     @include glow;
 

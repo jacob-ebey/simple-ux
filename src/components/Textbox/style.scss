@@ -17,6 +17,7 @@
   &>input, &>textarea {
     min-width: 100px;
     border: $border-width solid $color-dark;
+    padding: 0 $content-padding / 2;
 
     @include glow;
 
@@ -30,6 +31,7 @@
   }
 
   &>textarea {
+    padding: $content-padding / 2;
     resize: vertical;
   }
 }

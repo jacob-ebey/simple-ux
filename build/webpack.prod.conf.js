@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '../dist/'),
     filename: 'simple-ux.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'umd'
   },
   externals: {
     'preact': 'preact'

@@ -22,10 +22,12 @@
     font-weight: 600;
     white-space: nowrap;
     margin-right: 1em;
+    margin-left: 1em;
     order: 1;
 
     &>a, &>a:hover {
       border-bottom: none;
+      margin-left: 0;
     }
 
     @include breakpoint(phablet) {
