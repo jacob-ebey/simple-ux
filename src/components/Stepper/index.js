@@ -15,17 +15,18 @@ export default class Stepper extends Component {
 
   get canIncrement () {
     const { step } = this.state
-    const { children } = this.props
+    const { children, canIncrement } = this.props
 
     const count = childArray(children).length
 
-    return step < count - 1
+    return step < count - 1 && (canIncrement ? canIncrement() : true)
   }
 
   get canDecrement () {
     const { step } = this.state
+    const { canDecrement } = this.props
 
-    return step > 0
+    return step > 0 && (canDecrement ? canDecrement() : true)
   }
 
   render (props) {

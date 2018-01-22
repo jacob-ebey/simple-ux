@@ -4,6 +4,10 @@ import { Code, Content, Space } from 'src'
 
 import './style.scss'
 
+const Block = () => (
+  <div class='space-example-block' />
+)
+
 const SpaceExample = () => (
   <Content id='space-example'>
     <h3>Space</h3>
@@ -26,42 +30,46 @@ const blockStyle = {
   border: '2px solid orange'
 }
 
+const Block = () => (
+  <div style={blockStyle} />
+)
+
 <Space style={spaceStyle}>
-  <div style={blockStyle} />
-  <div style={blockStyle} />
-  <div style={blockStyle} />
+  <Block />
+  <Block />
+  <Block />
 </Space>
 
 <Space even style={spaceStyle}>
-  <div style={blockStyle} />
-  <div style={blockStyle} />
-  <div style={blockStyle} />
+  <Block />
+  <Block />
+  <Block />
 </Space>
 
 <Space even breakpoint='phablet' style={spaceStyle}>
-  <div style={blockStyle} />
-  <div style={blockStyle} />
-  <div style={blockStyle} />
+  <Block />
+  <Block />
+  <Block />
 </Space>
       `}
     </Code>
 
     <Space class='space-example'>
-      <div class='space-example-block' />
-      <div class='space-example-block' />
-      <div class='space-example-block' />
+      <Block />
+      <Block />
+      <Block />
     </Space>
 
     <Space class='space-example' even>
-      <div class='space-example-block' />
-      <div class='space-example-block' />
-      <div class='space-example-block' />
+      <Block />
+      <Block />
+      <Block />
     </Space>
 
     <Space class='space-example' even breakpoint='phablet'>
-      <div class='space-example-block' />
-      <div class='space-example-block' />
-      <div class='space-example-block' />
+      <Block />
+      <Block />
+      <Block />
     </Space>
 
   </Content>

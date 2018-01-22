@@ -59,10 +59,22 @@ describe('Stepper', () => {
       expect(wrapper.state('step')).toBe(1)
     })
 
-    it('dpes not increment', () => {
+    it('does not increment', () => {
       const wrapper = shallow(
         <Stepper>
           <span>Child 1</span>
+        </Stepper>
+      )
+      const increment = wrapper.find(<Button data-test='increment' />)
+      increment.simulate('click')
+      expect(wrapper.state('step')).toBe(0)
+    })
+
+    it('does not increment when custom', () => {
+      const wrapper = shallow(
+        <Stepper canIncrement={() => false}>
+          <span>Child 1</span>
+          <span>Child 2</span>
         </Stepper>
       )
       const increment = wrapper.find(<Button data-test='increment' />)
@@ -89,10 +101,22 @@ describe('Stepper', () => {
           <span>Child 1</span>
         </Stepper>
       )
-      wrapper.setState({ step: 0 })
       const decrement = wrapper.find(<Button data-test='decrement' />)
       decrement.simulate('click')
       expect(wrapper.state('step')).toBe(0)
+    })
+
+    it('does not decrement when custom', () => {
+      const wrapper = shallow(
+        <Stepper canDecrement={() => false}>
+          <span>Child 1</span>
+          <span>Child 2</span>
+        </Stepper>
+      )
+      wrapper.setState({ step: 1 })
+      const decrement = wrapper.find(<Button data-test='decrement' />)
+      decrement.simulate('click')
+      expect(wrapper.state('step')).toBe(1)
     })
   })
 })
