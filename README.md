@@ -8,14 +8,14 @@ For more information, see: https://jacob-ebey.github.io/simple-ux/
 
 Install the simple-ux package:
 
-```
-npm install -s simple-ux
+```shell
+> npm install -s simple-ux
 ```
 
 Import a component
 
-```
-import { Button } from 'simple-ux'
+```shell
+> import { Button } from 'simple-ux'
 ```
 
 You are up and running!
